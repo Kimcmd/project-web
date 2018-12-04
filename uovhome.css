@@ -1,0 +1,350 @@
+/*nav {
+    width: 100%;
+    padding: 1%;
+    background-color: #544A43;
+    margin: auto;
+   
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 30 px;
+    padding: 20 px;
+    font-weight: 700;
+    color: white;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: darkgrey;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    margin-left: 12%;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1.8em;
+}
+
+
+* {
+    font-family: sans-serif, roboto;
+}
+
+body {
+    background: #FBD731;
+}
+
+h1 {
+    font-size: 3.6em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 3em;
+    font-family: 'AfterShokRegular ', fantasy;
+    color: white;
+}
+
+@font-face {
+    font-family: 'AfterShokRegular';
+    src: url('fonts/aftershok.woff');
+}
+
+main {
+    background-color: white;
+    margin: 30px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px #675C54;
+}
+
+
+main input {
+    font-family: sans-serif;
+    font-size: 1.8em;
+    width: 50%;
+    margin: 30px;
+    padding: 20px 40px;
+    border-color: #675C54;
+    border-radius: 10px;
+    box-shadow: 0 0 4px #675C54;
+
+}
+
+button {
+    font-family: sans-serif;
+    font-size: 1.6em;
+    margin: 30px;
+    padding: 20px 40px;
+    border-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 4px #675C54;
+
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #E57736;
+    /* Green */
+    color: white;
+}
+
+
+section {
+    background-color: #F1F1F1;
+    margin: 30px;
+    padding: 20px 40px;
+    font-size: 1.0em;
+}
+
+#betwist {
+    margin: 30px;
+    padding: 20px 40px;
+}
+
+#personen {
+    margin: 30px;
+    padding: 20px 40px;
+    display: none;
+}
+
+#humor {
+    margin: 30px;
+    padding: 20px 40px;
+    display: none;
+}
+
+#spannend {
+    margin: 30px;
+    padding: 20px 40px;
+    display: none;
+}
+
+#humeur {
+    margin: 30px;
+    padding: 20px 40px;
+    display: none;
+}
+
+#taal {
+    margin: 30px;
+    padding: 20px 40px;
+    display: none;
+}
+
+#levensweg {
+    margin: 30px;
+    padding: 20px 40px;
+    display: none;
+}
+
+#hip {
+    margin: 30px;
+    padding: 20px 40px;
+    display: none;
+}
+
+#beperkingen {
+    margin: 30px;
+    padding: 20px 40px;
+    display: none;
+}
+
+#overig {
+    margin: 30px;
+    padding: 20px 40px;
+    display: none;
+}
+
+select {
+    margin: 30px;
+    font-size: 1.0em;
+    font-family: sans-serif;
+    border-color: #675C54;
+    border-radius: 10px;
+}
+
+
+p.een {
+    background-color: black;
+    color: white;
+    width: 40%;
+    margin: 30px;
+    padding: 20px 40px;
+    border-radius: 100px 100px 100px;
+    position: relative;
+      box-shadow: 0 0 40px #951bc6;
+
+  
+}
+
+p.twee{
+     background-color: black;
+    color: white;
+    width: 40%;
+    margin: 30px;
+    padding: 20px 40px;
+    border-radius: 100px 100px 100px;
+    position: relative;
+    left: 45%;
+      box-shadow: 0 0 40px #951bc6;
+    
+}
+p.drie {
+   background-color: black;
+    color: white;
+    width: 40%;
+    margin: 30px;
+    padding: 20px 40px;
+    border-radius: 100px 100px 100px;
+    position: relative;
+      box-shadow: 0 0 40px #951bc6;
+    
+}
+p.vier {
+     background-color: black;
+    color: white;
+    width: 40%;
+    margin: 30px;
+    padding: 20px 40px;
+    border-radius: 100px 100px 100px;
+    position: relative;
+    left: 45%;
+      box-shadow: 0 0 40px #951bc6;
+}
+p.vijf {
+     background-color: black;
+    color: white;
+    width: 40%;
+    margin: 30px;
+    padding: 20px 40px;
+    border-radius: 100px 100px 100px;
+    position: relative;
+      box-shadow: 0 0 40px #951bc6;
+  
+}
+p.zes {
+   background-color: black;
+    color: white;
+    width: 40%;
+    margin: 30px;
+    padding: 20px 40px;
+    border-radius: 100px 100px 100px;
+     position: relative;
+    left: 45%;
+   box-shadow: 0 0 40px #951bc6;
+}
+p.zeven {
+   background-color: black;
+    color: white;
+    width: 40%;
+    margin: 30px;
+    padding: 20px 40px;
+    border-radius: 100px 100px 100px;
+    position: relative;
+      box-shadow: 0 0 40px #951bc6;
+   
+}
+p.acht {
+   background-color: black;
+    color: white;
+    width: 40%;
+    margin: 30px;
+    padding: 20px 40px;
+    border-radius: 100px 100px 100px;
+     position: relative;
+    left: 45%;
+      box-shadow: 0 0 40px #951bc6;
+}
+p.negen {
+     background-color: black;
+    color: white;
+    width: 40%;
+    margin: 30px;
+    padding: 20px 40px;
+    border-radius: 100px 100px 100px;
+ position: relative;
+     box-shadow: 0 0 40px #951bc6;
+}
+p.tien {
+    background-color: black;
+    color: white;
+    width: 40%;
+    margin: 30px;
+    padding: 20px 40px;
+    border-radius: 100px 100px 100px;
+     position: relative;
+    left: 45%;
+     box-shadow: 0 0 40px #951bc6;
+}
+p.elf {
+    background-color: black;
+    color: white;
+    width: 40%;
+    margin: 30px;
+    padding: 20px 40px;
+    border-radius: 100px 100px 100px;
+     position: relative;
+      box-shadow: 0 0 40px #951bc6;
+}
+p.twaalf {
+    background-color: white;
+    width: 60%;
+    margin: 30px;
+    padding: 20px 40px;
+    border-radius: 100px 100px 100px;
+}
+article {
+    color: purple;
+    background-image: url(images/backgroundparanoia.png);
+    background-repeat: repeat;
+}
+p {
+    font-size: 1.8em;
+}
+footer {
+    background-color: #544A43;
+    color: white;
+    margin: 30px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px #675C54;
+}
+
+dd a{
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.8em;
+}
+dd a:hover{background-color: #E57736;}
