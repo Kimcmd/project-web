@@ -1,79 +1,13 @@
-/*nav {
-    width: 100%;
-    padding: 1%;
-    background-color: #544A43;
-    margin: auto;
-   
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    margin: 30 px;
-    padding: 20 px;
-    font-weight: 700;
-    color: white;
-}
-
-a:link {
-    color: white;
-    text-decoration: none;
-}
-
-a:visited {
-    color: darkgrey;
-}
-
-a:hover {
-    color: blue;
-    text-decoration: underline;
-}*/
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-li {
-    float: left;
-    margin-left: 12%;
-}
-
-li a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: sans-serif;
-    font-size: 1.8em;
-}
-
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 * {
-    font-family: sans-serif, roboto;
-}
-
-body {
-    background: #FBD731;
-}
-
-h1 {
-    font-size: 3.6em;
-}
-
-h2 {
-    font-size: 3em;
-}
-
-h3 {
-    font-size: 3em;
-    font-family: 'AfterShokRegular ', fantasy;
-    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.0em;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 @font-face {
@@ -81,24 +15,161 @@ h3 {
     src: url('fonts/aftershok.woff');
 }
 
-main {
-    background-color: white;
-    margin: 30px;
-    padding: 20px 40px;
+body {
+    background: #FBD731;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0em;
+    padding: 0em;
+    overflow: hidden;
+    background-color: #675C54;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+
+nav li a {
+    color: white;
+    padding: 11px;
+    text-decoration: none;
+    font-family: sans-serif;
+    display: block
+}
+
+nav li:last-child a {
+    text-indent: -3.5em;
+    overflow: hidden;
+    background-image: url(images/profile.png);
+}
+
+h1 {
+    background-color: #f9f9f9;
+    font-size: 1.6em;
+    margin: 15px;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 4px #675C54;
 }
 
+section p.intro {
+    visibility: hidden;
+}
 
-main input {
-    font-family: sans-serif;
-    font-size: 1.8em;
-    width: 50%;
-    margin: 30px;
-    padding: 20px 40px;
-    border-color: #675C54;
+section p.introtekst {
+    visibility: hidden;
+}
+
+main {
+    color: black;
+    padding: 1em;
+    background-color: #E57736;
     border-radius: 10px;
     box-shadow: 0 0 4px #675C54;
+    margin-top: -290px;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@import url(https://raw.github.com/FortAwesome/Font-Awesome/master/docs/assets/css/font-awesome.min.css);
+
+#wrap {
+    margin: 50px 10px;
+    display: inline-block;
+    position: relative;
+    height: 5px;
+    margin-top: 0em;
+    margin-bottom: 40px;
+    margin-left: 350px;
+    padding: 8px;
+
+}
+
+input[type="text"] {
+    height: 60px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    color: #f1f1f1;
+    padding: 1px;
+    padding-right: 40px;
+    width: 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    z-index: 3;
+    transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+    cursor: pointer;
+}
+
+input[type="text"]:focus:hover {
+    border-bottom: 1px solid #f1f1f1;
+}
+
+input[type="text"]:focus {
+    width: 300px;
+    z-index: 1;
+    border-bottom: 1px solid #f1f1f1;
+    cursor: text;
+}
+
+input[type="submit"] {
+    height: 67px;
+    width: 63px;
+    display: inline-block;
+    color: red;
+    float: right;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADNQTFRFU1NT9fX1lJSUXl5e1dXVfn5+c3Nz6urqv7+/tLS0iYmJqampn5+fysrK39/faWlp////Vi4ZywAAABF0Uk5T/////////////////////wAlrZliAAABLklEQVR42rSWWRbDIAhFHeOUtN3/ags1zaA4cHrKZ8JFRHwoXkwTvwGP1Qo0bYObAPwiLmbNAHBWFBZlD9j0JxflDViIObNHG/Do8PRHTJk0TezAhv7qloK0JJEBh+F8+U/hopIELOWfiZUCDOZD1RADOQKA75oq4cvVkcT+OdHnqqpQCITWAjnWVgGQUWz12lJuGwGoaWgBKzRVBcCypgUkOAoWgBX/L0CmxN40u6xwcIJ1cOzWYDffp3axsQOyvdkXiH9FKRFwPRHYZUaXMgPLeiW7QhbDRciyLXJaKheCuLbiVoqx1DVRyH26yb0hsuoOFEPsoz+BVE0MRlZNjGZcRQyHYkmMp2hBTIzdkzCTc/pLqOnBrk7/yZdAOq/q5NPBH1f7x7fGP4C3AAMAQrhzX9zhcGsAAAAASUVORK5CYII=) center center no-repeat;
+    text-indent: -10000px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: opacity .4s ease;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+
+aside.scrollmenu {
+    background-color: #E57736;
+    overflow: auto;
+    white-space: nowrap;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px #f1f1f1;
+}
+
+p {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    font-size: 1.6em;
+}
+
+aside.scrollmenu a {
+    display: inline-flex;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 3px;
+}
+
+aside.scrollmenu a:hover {
+    background-color: #E57736;
+    opacity: 0.5;
+}
 
 }
 
@@ -106,7 +177,7 @@ button {
     font-family: sans-serif;
     font-size: 1.6em;
     margin: 30px;
-    padding: 20px 40px;
+
     border-color: white;
     border-radius: 10px;
     box-shadow: 0 0 4px #675C54;
@@ -116,235 +187,386 @@ button {
 
 button:hover {
     background-color: #E57736;
-    /* Green */
     color: white;
 }
 
 
-section {
+section.verhalenopties {
     background-color: #F1F1F1;
-    margin: 30px;
-    padding: 20px 40px;
-    font-size: 1.0em;
+    margin-top: 10px;
+    max-width: 400px;
+    margin: 10px;
+    padding: 10px
 }
 
-#betwist {
-    margin: 30px;
-    padding: 20px 40px;
+.verhalenopties figure img {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+
 }
 
-#personen {
-    margin: 30px;
-    padding: 20px 40px;
-    display: none;
+.verhalenopties figure:hover img {
+    opacity: 0.5;
 }
 
-#humor {
-    margin: 30px;
-    padding: 20px 40px;
-    display: none;
+section figure img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#spannend {
-    margin: 30px;
-    padding: 20px 40px;
-    display: none;
+figure.opslaan {
+    margin-left: 300px;
 }
 
-#humeur {
-    margin: 30px;
-    padding: 20px 40px;
-    display: none;
-}
-
-#taal {
-    margin: 30px;
-    padding: 20px 40px;
-    display: none;
-}
-
-#levensweg {
-    margin: 30px;
-    padding: 20px 40px;
-    display: none;
-}
-
-#hip {
-    margin: 30px;
-    padding: 20px 40px;
-    display: none;
-}
-
-#beperkingen {
-    margin: 30px;
-    padding: 20px 40px;
-    display: none;
-}
-
-#overig {
-    margin: 30px;
-    padding: 20px 40px;
-    display: none;
-}
-
-select {
-    margin: 30px;
-    font-size: 1.0em;
-    font-family: sans-serif;
-    border-color: #675C54;
-    border-radius: 10px;
-}
-
-
-p.een {
-    background-color: black;
-    color: white;
-    width: 40%;
-    margin: 30px;
-    padding: 20px 40px;
-    border-radius: 100px 100px 100px;
-    position: relative;
-      box-shadow: 0 0 40px #951bc6;
-
-  
-}
-
-p.twee{
-     background-color: black;
-    color: white;
-    width: 40%;
-    margin: 30px;
-    padding: 20px 40px;
-    border-radius: 100px 100px 100px;
-    position: relative;
-    left: 45%;
-      box-shadow: 0 0 40px #951bc6;
-    
-}
-p.drie {
-   background-color: black;
-    color: white;
-    width: 40%;
-    margin: 30px;
-    padding: 20px 40px;
-    border-radius: 100px 100px 100px;
-    position: relative;
-      box-shadow: 0 0 40px #951bc6;
-    
-}
-p.vier {
-     background-color: black;
-    color: white;
-    width: 40%;
-    margin: 30px;
-    padding: 20px 40px;
-    border-radius: 100px 100px 100px;
-    position: relative;
-    left: 45%;
-      box-shadow: 0 0 40px #951bc6;
-}
-p.vijf {
-     background-color: black;
-    color: white;
-    width: 40%;
-    margin: 30px;
-    padding: 20px 40px;
-    border-radius: 100px 100px 100px;
-    position: relative;
-      box-shadow: 0 0 40px #951bc6;
-  
-}
-p.zes {
-   background-color: black;
-    color: white;
-    width: 40%;
-    margin: 30px;
-    padding: 20px 40px;
-    border-radius: 100px 100px 100px;
-     position: relative;
-    left: 45%;
-   box-shadow: 0 0 40px #951bc6;
-}
-p.zeven {
-   background-color: black;
-    color: white;
-    width: 40%;
-    margin: 30px;
-    padding: 20px 40px;
-    border-radius: 100px 100px 100px;
-    position: relative;
-      box-shadow: 0 0 40px #951bc6;
-   
-}
-p.acht {
-   background-color: black;
-    color: white;
-    width: 40%;
-    margin: 30px;
-    padding: 20px 40px;
-    border-radius: 100px 100px 100px;
-     position: relative;
-    left: 45%;
-      box-shadow: 0 0 40px #951bc6;
-}
-p.negen {
-     background-color: black;
-    color: white;
-    width: 40%;
-    margin: 30px;
-    padding: 20px 40px;
-    border-radius: 100px 100px 100px;
- position: relative;
-     box-shadow: 0 0 40px #951bc6;
-}
-p.tien {
-    background-color: black;
-    color: white;
-    width: 40%;
-    margin: 30px;
-    padding: 20px 40px;
-    border-radius: 100px 100px 100px;
-     position: relative;
-    left: 45%;
-     box-shadow: 0 0 40px #951bc6;
-}
-p.elf {
-    background-color: black;
-    color: white;
-    width: 40%;
-    margin: 30px;
-    padding: 20px 40px;
-    border-radius: 100px 100px 100px;
-     position: relative;
-      box-shadow: 0 0 40px #951bc6;
-}
-p.twaalf {
-    background-color: white;
-    width: 60%;
-    margin: 30px;
-    padding: 20px 40px;
-    border-radius: 100px 100px 100px;
-}
-article {
-    color: purple;
-    background-image: url(images/backgroundparanoia.png);
-    background-repeat: repeat;
-}
-p {
-    font-size: 1.8em;
-}
-footer {
+h3 {
+    margin-top: 30px;
+    padding-top: 5px;
+    font-size: 1.3em;
+    color: #ffffff;
     background-color: #544A43;
-    color: white;
-    margin: 30px;
-    padding: 20px 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 4px #675C54;
+
 }
 
-dd a{
-    color: white;
-    font-family: sans-serif;
-    font-size: 0.8em;
+footer {
+    visibility: hidden;
 }
-dd a:hover{background-color: #E57736;}
+
+
+@media only screen and (min-width: 500px) {
+
+    body {
+        background-color: #fbd731;
+    }
+
+    h1 {
+        max-width: 400px;
+        margin-left: 100px
+    }
+    main {
+        background-color: #fbd731;
+        border-radius: 0px;
+        box-shadow: 0 0 0 0;
+        margin-top: -290px;
+    }
+    .scrollmenu {
+
+        width: 150px;
+        position: absolute;
+        z-index: 0;
+        margin-top: 30px;
+        margin-left: -16px;
+
+        display: flex;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        flex-direction: colomn;
+        flex-wrap: wrap;
+        padding: 3px;
+    }
+
+    input[type="radio"] {
+        text-decoration: none;
+        font-size: 1em;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    p img {
+        visibility: hidden;
+    }
+
+
+    #wrap {
+        margin: 50px 10px;
+        display: inline-block;
+        position: relative;
+        height: 10px;
+        float: right;
+        margin-top: -2.5em;
+        margin-bottom: 0em;
+        padding: 0em;
+        position: relative;
+    }
+
+    article {
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-left: 150px;
+
+    }
+    
+
+
+    section.verhalenopties {
+        background-color: #e57736;
+        margin-top: 10px;
+        max-width: 200px;
+        margin: 10px;
+        padding: 10px;
+        color: #ffffff;
+    }
+
+    section figure img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 170px;
+    }
+
+    figure.opslaan {
+        margin-left: 120px;
+        padding: 3px;
+        margin-top: -20px;
+    }
+
+
+
+    h3 {
+        visibility: hidden;
+    }
+
+    footer {
+        visibility: visible;
+        background-color: #f9f9f9;
+        padding: 20px 40px;
+    }
+
+    h4 {
+        font-size: 1.3em;
+        padding: 2px;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+    footer p.voorwaarde {
+        color: #675c54;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 650px) {
+
+
+    h1 {
+        max-width: 100%;
+        margin-top: 0px;
+        margin-left: 0px;
+        padding: 20px 40px;
+        border-radius: 0px 0px 10px 10px;
+
+    }
+
+    h1 {
+        visibility: hidden;
+    }
+
+    section p.intro img {
+        background-color: #f9f9f9;
+        visibility: visible;
+        margin-top: -200px;
+        min-width: 1000px;
+        max-height: 100px;
+
+    }
+
+    section p.introtekst {
+        visibility: visible;
+        color: #675c54;
+        background-color: #f9f9f9;
+        margin-top: -104.6px;
+        padding: 20px 40px;
+        ;
+        font-size: 1.6em;
+        text-align: center;
+    }
+
+    main {
+        background-color: #fbd731;
+        border-radius: 0px;
+        box-shadow: 0 0 0 0;
+        margin-top: 10px;
+        
+    }
+    .scrollmenu {
+
+        width: 150px;
+        position: absolute;
+        z-index: 0;
+        margin-top: 50px;
+        margin-left: -16px;
+
+        display: flex;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        flex-direction: colomn;
+        flex-wrap: wrap;
+        padding: 3px;
+    }
+
+    input[type="radio"] {
+        text-decoration: none;
+        font-size: 1em;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    p img {
+        visibility: hidden;
+    }
+
+
+    #wrap {
+        margin: 50px 10px;
+        display: inline-block;
+        position: relative;
+        height: 10px;
+        float: right;
+        margin-top: -0.5em;
+        margin-bottom: 0em;
+        padding: 0em;
+        position: relative;
+    }
+
+    article {
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        margin-left: 150px;
+
+    }
+
+
+    section.verhalenopties {
+        background-color: #e57736;
+        margin-top: 10px;
+        max-width: 200px;
+        margin: 10px;
+        padding: 10px;
+        color: #ffffff;
+    }
+
+    section figure img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 170px;
+    }
+
+    figure.opslaan {
+        margin-left: 120px;
+        padding: 3px;
+        margin-top: -20px;
+    }
+
+
+
+    h3 {
+        visibility: hidden;
+    }
+
+    footer {
+        visibility: visible;
+        background-color: #f9f9f9;
+        padding: 20px 40px;
+    }
+
+    h4 {
+        font-size: 1.3em;
+        padding: 2px;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+    footer p.voorwaarde {
+        color: #675c54;
+    }
+
+
+}
+
+
+
+
+@media only screen and (min-width: 1000px) {
+    
+    section p.intro img {
+        background-color: #f9f9f9;
+        visibility: visible;
+        margin-top: -200px;
+        min-width: 1500px;
+        max-height: 100px;
+
+    }
+
+    
+    
+section.verhalenopties {
+    max-width: 400px;
+    font-size: 1.3em;
+    color: #ffffff;
+}
+
+
+section figure img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+    max-height: 150px;
+}
+
+figure.opslaan {
+    margin-left: 300px;
+}
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

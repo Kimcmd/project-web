@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.0em;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'AfterShokRegular';
+    src: url('fonts/aftershok.woff');
+}
+
+body {
+    background: #000000;
+    margin-top: -20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0em;
+    padding: 0em;
+    overflow: hidden;
+    background-color: #675C54;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+
+nav li a {
+    color: white;
+    padding: 11px;
+    text-decoration: none;
+    font-family: sans-serif;
+    display: block
+}
+
+nav li:last-child a {
+    text-indent: -3.5em;
+    overflow: hidden;
+    background-image: url(images/profile.png);
+}
+
+.fasetwee {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.tweedenav {
+    background-color: #E57736;
+    color: #f1f1f1;
+    padding: 4px 2px;
+}
+
+.derdenav {
+    background-color: #A9A9A9;
+    display: flex;
+    display: row;
+    justify-content: space-between;
+  padding: 1px 20px;
+   padding-top: 4px
+}
+
+.derdenav a {
+    padding-top: 2px;
+    color: #ffffff;
+}
+
+#teksttwee {
+    color: white;
+    margin-right: 10em;
+    font-size: 1.3em;
+
+}
+
+h2 {
+    visibility: hidden;
+}
+section .rating {
+    display: inline-block;
+    position: relative;
+    height: 20px;
+    line-height: 20px;
+    font-size: 1.6em;
+    margin-left: 20px;
+}
+
+section .rating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    cursor: pointer;
+}
+
+section .rating label:last-child {
+    position: static;
+}
+
+section n.rating label:nth-child(1) {
+    z-index: 5;
+}
+
+section .rating label:nth-child(2) {
+    z-index: 4;
+}
+
+section .rating label:nth-child(3) {
+    z-index: 3;
+}
+
+section .rating label:nth-child(4) {
+    z-index: 2;
+}
+
+section .rating label:nth-child(5) {
+    z-index: 1;
+}
+
+section .rating label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+section .rating label .icon {
+
+    color: transparent;
+}
+
+section .rating label:last-child .icon {
+    color: #ffffff;
+}
+
+.rating:not(:hover) label input:checked ~ .icon,
+.rating:hover label:hover input ~ .icon {
+    color: #FBD731;
+}
+
+.rating label input:focus:not(:checked) ~ .icon:last-child {
+    color: #000;
+    text-shadow: 0 0 5px #FBD731;
+}
+
+.container {
+  position: relative;
+  height: 300px;
+  width: 400px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@keyframes fadein {
+  0%, 100% {
+    opacity: 0;
+  }
+
+  72% {
+    opacity: 1;
+  }
+
+}
+
+.get{
+
+ opacity: 0;
+  animation-name: fadein;
+  animation-duration: 8s;
+  animation-delay: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.geet{
+
+ opacity: 0;
+  animation-name: fadein;
+  animation-duration: 9s;
+  animation-delay: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+
+.give{
+     margin-top: 200px;
+    margin-left: -100px;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 8s;
+  animation-delay: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.givee{
+     margin-top: 200px;
+    margin-left: -100px;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 9s;
+  animation-delay: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+p {
+  position: absolute;
+    color: #ffffff;
+}
+
+.p1 {
+  top: 50px;
+  left: 50px;
+}
+
+.p2 {
+  top: 140px;
+  left: 180px;
+}
+
+article a {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+    color: #000;
+    font-size: 1em;
+    margin-left: 20px;
+}
+
+main a.linktwee {
+        visibility: hidden;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+    color: #000;
+    font-size: 1em;
+    margin-left: 20px;
+    }
+
+footer {
+	
+	margin-top: 300px;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+canvas {
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	cursor: pointer;
+}
+
+@media only screen and (min-width: 800px) { 
+
+  .container {
+  position: relative;
+  height: 200px;
+  width: 600px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+    
+    .container .p2 {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        
+    }
+
+}
+
+@media only screen and (min-width: 1000px) { 
+
+  .container {
+      margin-left: 50px;
+}
+    
+    .container .p2 {
+        margin-top: 110px;
+        margin-bottom: 10px;
+        margin-left: 300px;
+        width: 500px;
+        
+    }
+    
+    p {
+        font-size: 1.3em;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) { 
+
+  .container {
+      margin-left: 50px;
+      margin: 10px;
+     width: 500px;
+}
+    
+    .container .p2 {
+        margin-top: 10px;
+        margin-bottom: 100px;
+        margin-left: 400px;
+        width: 400px;
+        
+    }
+    
+    article a {
+      visibility: hidden;
+    }
+    
+    main a.linktwee {
+        visibility: visible;
+    margin-left: 1100px;
+    }
+
+}
+
+

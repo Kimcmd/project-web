@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.0em;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'AfterShokRegular';
+    src: url('fonts/aftershok.woff');
+}
+
+body {
+    background: #000000;
+    background-image: url(images/backgroundparanoia.png);
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0em;
+    padding: 0em;
+    overflow: hidden;
+    background-color: #675C54;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+
+nav li a {
+    color: white;
+    padding: 11px;
+    text-decoration: none;
+    font-family: sans-serif;
+    display: block
+}
+
+nav li:last-child a {
+    text-indent: -3.5em;
+    overflow: hidden;
+    background-image: url(images/profile.png);
+}
+
+.fasetwee {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.tweedenav {
+    background-color: #E57736;
+    color: #f1f1f1;
+    padding: 4px 2px;
+}
+
+.derdenav {
+    background-color: #A9A9A9;
+    display: flex;
+    display: row;
+    justify-content: space-between;
+  padding: 1px 20px;
+   padding-top: 4px
+}
+
+.derdenav a {
+    padding-top: 2px;
+    color: #ffffff;
+}
+
+#teksttwee {
+    color: white;
+    margin-right: 10em;
+    font-size: 1.3em;
+
+}
+
+article h2 {
+    visibility: hidden;
+}
+
+.luisteren {
+    background-color: yellow;
+    margin-left: 260px;
+    padding: 15px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px #675C54;
+    color: #E57736;
+}
+a.luisteren:hover {
+    background-color: #E57736;
+    color: #ffffff;
+}
+
+section .rating {
+    display: inline-block;
+    position: relative;
+    height: 20px;
+    line-height: 20px;
+    font-size: 1.6em;
+    margin-left: 20px;
+}
+
+section .rating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    cursor: pointer;
+}
+
+section .rating label:last-child {
+    position: static;
+}
+
+section n.rating label:nth-child(1) {
+    z-index: 5;
+}
+
+section .rating label:nth-child(2) {
+    z-index: 4;
+}
+
+section .rating label:nth-child(3) {
+    z-index: 3;
+}
+
+section .rating label:nth-child(4) {
+    z-index: 2;
+}
+
+section .rating label:nth-child(5) {
+    z-index: 1;
+}
+
+section .rating label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+section .rating label .icon {
+
+    color: transparent;
+}
+
+section .rating label:last-child .icon {
+    color: #ffffff;
+}
+
+.rating:not(:hover) label input:checked ~ .icon,
+.rating:hover label:hover input ~ .icon {
+    color: #FBD731;
+}
+
+.rating label input:focus:not(:checked) ~ .icon:last-child {
+    color: #000;
+    text-shadow: 0 0 5px #FBD731;
+}
+
+
+h2 {
+    visibility: hidden;
+}
+@font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
+.container {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.neon {
+  font-family: neon;
+  color: #FB4264;
+  font-size: 1.3em;
+  line-height: 1.3em;;
+  text-shadow: 0 0 3vw #F40A35;
+margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.flux {
+  font-family: neon;
+  color: #426DFB;
+  font-size: 1.3em;
+  line-height: 1.3em;
+  text-shadow: 0 0 3vw #2356FF;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.neon {
+  animation: neon 1s ease infinite;
+  -moz-animation: neon 1s ease infinite;
+  -webkit-animation: neon 1s ease infinite;
+}
+
+@keyframes neon {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+    color: #FED128;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+    color: #806914;
+  }
+}
+
+.flux {
+  animation: flux 2s linear infinite;
+  -moz-animation: flux 2s linear infinite;
+  -webkit-animation: flux 2s linear infinite;
+  -o-animation: flux 2s linear infinite;
+}
+
+@keyframes flux {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+    color: #28D7FE;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+    color: #146C80;
+  }
+}
+
+article a {
+    background-color: #FD5F00;
+    border-radius: 10px;
+    padding: 10px;
+ margin: 300px;
+    color: #ffffff;
+
+}
+audio {
+   margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+
+@media only screen and (min-width: 550px) {
+    
+    article a {
+        margin-left: 500px;
+    }
+    
+    audio {
+        margin-left: 130px;
+    }
+    
+article .neon {
+        padding: 20px;
+    }
+
+    a.luisteren {
+        margin-left: 400px;
+    }
+    
+}
+
+
+@media only screen and (min-width: 800px) {
+   
+    article a {
+        margin-left: 50px;
+    }
+    
+    audio {
+        margin-left: 200px;
+        width: 400px;
+    }
+    
+article .neon {
+        padding: 40px;
+    }
+
+    a.luisteren {
+        margin-left: 600px;
+    }
+    
+}
+
+@media only screen and (min-width: 1000px) {
+
+    
+    article a {
+        margin-left: 750px;
+    }
+    
+    audio {
+        margin-left: 250px;
+        width: 600px;
+    }
+    
+article .neon {
+        padding: 60px;
+    }
+
+    a.luisteren {
+        margin-left: 800px;
+    }
+    
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+    
+    article a {
+        margin-left: 950px;
+    }
+    
+    audio {
+        margin-left: 300px;
+        width: 700px;
+    }
+    
+article .neon {
+        padding: 90px;
+    }
+
+    a.luisteren {
+        margin-left: 1050px;
+    }
+    
+}
+
+
+
